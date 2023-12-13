@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../models/category_model.dart';
 import '../views/category_view.dart';
 
-
 class CategoryCard extends StatelessWidget {
   const CategoryCard({super.key, required this.category});
 

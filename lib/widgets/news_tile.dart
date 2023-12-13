@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../models/article_model.dart';
 
-// cached network image
 class NewsTile extends StatelessWidget {
   const NewsTile({super.key, required this.articleModel});
 
@@ -14,7 +13,17 @@ class NewsTile extends StatelessWidget {
       children: [
         ClipRRect(
             borderRadius: BorderRadius.circular(6),
-            child: Image.network(
+            child: articleModel.image == null ? Container(
+              color: Colors.white,
+              height: 200,
+              width: double.infinity,
+              child: Center(
+                child: Text('Image not found',style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 25,
+                )),
+              ),
+            ) : Image.network(
               articleModel.image!,
               height: 200,
               width: double.infinity,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../widgets/categories_list_view.dart';
 import '../widgets/news_list_view_builder.dart';
 

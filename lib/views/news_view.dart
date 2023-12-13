@@ -1,7 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:news_app/widgets/category_widgets/category_card.dart';
 
-import '../widgets/category_widgets/categories_list_view.dart';
+
+import 'package:flutter/material.dart';
+
+import '../widgets/categories_list_view.dart';
 
 class NewsView extends StatelessWidget {
   const NewsView({super.key});
